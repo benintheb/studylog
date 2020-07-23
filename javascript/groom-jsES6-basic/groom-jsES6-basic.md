@@ -32,15 +32,33 @@ When using `var`, the variable is considered as a global scope.
 
 #### Function Scopes
 
-Function scopes can only be used inside functions, as the name suggests.
+Function scopes can only be used inside functions, as the name suggests. 
+
+    function funcScope(){
+        var num = 10;
+
+        console.log(num);   // The variable num is recognized inside the function scope
+    }
+    console.log(num);   /* Outside the function, the variable is not recognized, 
+                            resulting an Uncaught ReferenceError: num is not defined */
 
 ### Global Scopes
 
-Global scopes can be used in all areas inside the code, when not confined by blocks and functions, 
+Global scopes can be used in all areas inside the code, when not confined by blocks and functions.
 
 Block scopes not using `let` and `const` are also considered as a global scope.
 
-<br>
+    {
+        var num = 10;
+    }
+
+    console.log(num)
+
+    function numTest(){
+        console.log(num);
+    }
+    
+    numTest();
 
 However, usage of global scopes are not recommended, and should not be used if possible.
 
