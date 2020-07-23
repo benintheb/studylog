@@ -6,6 +6,8 @@
 
 ## this (200723)
 
+### Binding
+
 The term *binding* can be used to describe the **this** keyword.
 
     var obj1 = {
@@ -24,8 +26,21 @@ The term *binding* can be used to describe the **this** keyword.
     obj1.nameOut(); // harry
     obj2.nameOut(); // ben
 
-As seen in the code, obj2 was created and given obj1's nameOut function.  
-obj1 and obj2's nameOut function both give different printouts, for each nameOut function is *binded* onto different objects.
+As seen in the code, obj2's nameOut function was created and given the same nameOut function as obj1.  
+However, obj1 and obj2's nameOut function both give different printouts, for each nameOut function is *binded* onto different objects.
+
+*binding* is matching the right methods to the right objects.
+
+### The Window Object
+
+The window object, or the Browser Object Model(BOM) is a way to "talk to" a browser.  
+All global objects, functions, and variables become members of the window object.  
+Even the document object(DOM) is a member of the window object.
+
+For JavaScript running in a browser, it is the *window object*.  
+For JavaScript running in server side(node.js), it is the *global object*.
+
+### nexttttttttt
 
 ---
 
@@ -38,17 +53,18 @@ A variable declared in a local scope is a local variable. (of course)
 
 ### Local Scopes
 
-Local scopes are again devided into two scopes, block scopes and function scopes.  
-- #### Block Scopes
+Local scopes are again devided into two scopes, block scopes and function scopes.
 
-Block scopes were implemented in ES6.  
+- #### Block Scopes (implemented in ES6)
+
 What is a block? 
 
     {
         // this is the active area for block scopes
     }
 
-Block scopes are activated only using `let` and `const`. When using `var`, the variable is considered as a global scope.  
+Block scopes are activated only using `let` and `const`. When using `var`, the variable is considered as a global scope.
+
 - #### Function Scopes
 
 Function scopes can only be used inside functions, as the name suggests.
