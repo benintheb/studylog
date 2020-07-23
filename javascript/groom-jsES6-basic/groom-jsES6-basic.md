@@ -6,14 +6,14 @@
 
 ## Scope (200723)
 
-There are two kinds of scopes. Global scopes and local scopes.  
+There are two kinds of scopes. Global scopes and local scopes.
+
 A variable declared in a global scope is a global variable.  
 A variable declared in a local scope is a local variable. (of course)
 
 ### Local Scopes
 
-Local scopes are again devided into two scopes, block scopes and function scopes.
-
+Local scopes are again devided into two scopes, block scopes and function scopes.  
 - #### Block Scopes
 
 Block scopes were implemented in ES6.  
@@ -23,9 +23,7 @@ What is a block?
         // this is the active area for block scopes
     }
 
-Block scopes are activated only using `let` and `const`.  
-When using `var`, the variable is considered as a global scope.
-
+Block scopes are activated only using `let` and `const`. When using `var`, the variable is considered as a global scope.  
 - #### Function Scopes
 
 Function scopes can only be used inside functions, as the name suggests.  
@@ -54,9 +52,7 @@ Block scopes not using `let` and `const` are also considered as a global scope.
 
     numTest();
 
-However, usage of global scopes are not recommended, and should not be used if possible.  
-When writing massive lines of code and functions, global scopes will become harder to track.  
-In this manner, global scopes are best used when it has a value that does not change.
+However, usage of global scopes are not recommended, and should not be used if possible. When writing massive lines of code and functions, global scopes will become harder to track. In this manner, global scopes are best used when it has a value that does not change.
 
 ### In Addition
 
