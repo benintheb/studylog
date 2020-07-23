@@ -4,7 +4,7 @@
 
 ---
 
-## this (200723)
+## this Keyword (200723)
 
 ### Binding
 
@@ -26,16 +26,16 @@ The term *binding* can be used to describe the `this` keyword.
     obj1.nameOut(); // harry
     obj2.nameOut(); // ben
 
-As seen in the code, obj2's nameOut function was created and given the same nameOut function as obj1.  
-However, obj1 and obj2's nameOut function both give different printouts, for each nameOut function is *binded* onto different objects.
+As seen in the code, `obj2`'s nameOut function was created and given the same `nameOut` function as `obj1`.  
+However, `obj1` and `obj2`'s nameOut function both give different printouts, for each `nameOut` function is *binded* onto different objects.
 
-*binding* is matching the right methods to the right objects.
+*Binding* is matching the right methods to the right objects.
 
 ### The Window Object
 
 The window object, or the Browser Object Model(BOM) is a way to "talk to" a browser.  
-All global objects, functions, and variables become members of the window object.  
-Even the document object(DOM) is a member of the window object.
+All global objects, functions, and variables become members of the window object, including the document object(DOM).
+
 
 For JavaScript running in a browser, it is the **window object**.  
 For JavaScript running in server side(node.js), it is the **global object**.  
@@ -45,11 +45,11 @@ For JavaScript running in server side(node.js), it is the **global object**.
 When calling a function, the usage of `this` binds to the window object.  
 
     var name = "harry";
-    console.log(window.name);
+    console.log(window.name);   // harry
 
     var nameOut = function(){
         var name = "ben";
-        console.log(this.name);
+        console.log(this.name); //harry
     }
 
     nameOut();
@@ -76,7 +76,7 @@ Both log functions print out harry, for both are calling for the variable `name`
     obj1.nameOut(); // harry
     obj2.nameOut(); // ben
 
-Both objects are calling `this.name`, but each method is binded with a different name: the name that is declared in each of it's own object.
+Both objects are calling `this.name`, but each method is binded with a different `name`: the `name` that is declared in each of it's own object.
 
 ### Binding of this In a Constructor Method
 
@@ -94,7 +94,7 @@ Both objects are calling `this.name`, but each method is binded with a different
 
 `this` is called in the constructor method `person`, but is binded to objects `a` and `b` that are constructed by `person`.  
 
-The difference between a general method and a constructor method is that the constructor method makes new objects with the usage of `new`.
+- The difference between a general method and a constructor method is that the constructor method makes new objects with the usage of `new`.
 
 ### Binding of this In a Inner Method
 
@@ -114,14 +114,14 @@ The difference between a general method and a constructor method is that the con
     };
     obj.func(); // func's value: 1
 
-Method `func`'s `this.value` is binded with `value` of obj which is 1, but the inner method `innerFunc`'s `this.value` is binded with `value` of the window object which is 100.  
+Method `func`'s `this.value` is binded with `value` of `obj` which is 1, but the inner method `innerFunc`'s `this.value` is binded with `value` of the window object which is 100.  
 
-This phenomena shows one of the flaws of the JavaScript language.  
-There are methods such as `apply`, `call`, and `bind` to address this flaw, but will be looked at another time.
+- This phenomena shows one of the flaws of the JavaScript language.  
+- There are methods such as `apply`, `call`, and `bind` to address this flaw, but will be looked at another time.
 
 ---
 
-## Scope (200723)
+## Scopes (200723)
 
 There are two kinds of scopes. Global scopes and local scopes.
 
