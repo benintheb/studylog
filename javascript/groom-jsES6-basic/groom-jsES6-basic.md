@@ -8,7 +8,7 @@
 
 ### Binding
 
-The term *binding* can be used to describe the **this** keyword.
+The term *binding* can be used to describe the `this` keyword.
 
     var obj1 = {
         name: 'harry',
@@ -37,10 +37,87 @@ The window object, or the Browser Object Model(BOM) is a way to "talk to" a brow
 All global objects, functions, and variables become members of the window object.  
 Even the document object(DOM) is a member of the window object.
 
-For JavaScript running in a browser, it is the *window object*.  
-For JavaScript running in server side(node.js), it is the *global object*.
+For JavaScript running in a browser, it is the **window object**.  
+For JavaScript running in server side(node.js), it is the **global object**.  
 
-### nexttttttttt
+### Binding of this In a General Method
+
+When calling a function, the usage of `this` binds to the window object.  
+
+    var name = "harry";
+    console.log(window.name);
+
+    var nameOut = function(){
+        var name = "ben";
+        console.log(this.name);
+    }
+
+    nameOut();
+
+Both log functions print out harry, for both are calling for the variable `name` of the window object.
+
+### Binding of this In a Object Method
+
+`this` in a object method binds to whichever object it is called in.
+
+    var obj1 = {
+        name: 'harry',
+        nameOut: function(){
+            console.log(this.name);
+        }
+    }
+
+    var obj2 = {
+        name: 'ben'
+    }
+
+    obj2.nameOut = obj1.nameOut;
+
+    obj1.nameOut(); // harry
+    obj2.nameOut(); // ben
+
+Both objects are calling `this.name`, but each method is binded with a different name: the name that is declared in each of it's own object.
+
+### Binding of this In a Constructor Method
+
+`this` in a constructor method binds to the object that is constructed by the method.
+
+    var person = function(name){
+        this.name = name;
+    }
+
+    var a = new person("harry");
+    console.log(a.name);    // harry
+
+    var b = new person("ben");
+    console.log(b.name);    // ben
+
+`this` is called in the constructor method `person`, but is binded to objects `a` and `b` that are constructed by `person`.  
+
+The difference between a general method and a constructor method is that the constructor method makes new objects with the usage of `new`.
+
+### Binding of this In a Inner Method
+
+`this` in an inner method **always** binds to the window object.
+
+    var value = 100;
+
+    var obj = {
+        value: 1,
+        func: function(){
+            console.log("func's value: ", this.value);
+            function innerFunc(){
+                console.log("innerFunc's value: ", this.value);
+            }
+            innerFunc();    // innerFunc's value: 100
+        }
+    };
+    obj.func(); // func's value: 1
+
+Method `func`'s `this.value` is binded with `value` of obj which is 1, but the inner method `innerFunc`'s `this.value` is binded with `value` of the window object which is 100.  
+
+This phenomena shows one of the flaws of the JavaScript language.  
+There are methods such as `apply`, `call`, and `bind` to address this flaw, but will be looked at another time.
 
 ---
 
