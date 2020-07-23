@@ -4,6 +4,31 @@
 
 ---
 
+## this (200723)
+
+The term *binding* can be used to describe the **this** keyword.
+
+    var obj1 = {
+        name: 'harry',
+        nameOut: function(){
+            console.log(this.name);
+        }
+    }
+
+    var obj2 = {
+        name: 'ben'
+    }
+
+    obj2.nameOut = obj1.nameOut;
+
+    obj1.nameOut(); // harry
+    obj2.nameOut(); // ben
+
+As seen in the code, obj2 was created and given obj1's nameOut function.  
+obj1 and obj2's nameOut function both give different printouts, for each nameOut function is *binded* onto different objects.
+
+---
+
 ## Scope (200723)
 
 There are two kinds of scopes. Global scopes and local scopes.
@@ -26,7 +51,8 @@ What is a block?
 Block scopes are activated only using `let` and `const`. When using `var`, the variable is considered as a global scope.  
 - #### Function Scopes
 
-Function scopes can only be used inside functions, as the name suggests.  
+Function scopes can only be used inside functions, as the name suggests.
+
     function funcScope(){
         var num = 10;
 
@@ -58,4 +84,3 @@ However, usage of global scopes are not recommended, and should not be used if p
 
 - There are more kinds of scopes, these are just the fundamental kinds of scopes.  
 - Through Chrome's DevTools, one can see what kind of scope a variable is using, and where it is used.
-
