@@ -38,7 +38,8 @@ Function `b` receives function `a` as a factor and keeps it. Function `a` is exe
 
 ### Callback Hell
 
-There are instances where multiple executions need to be in an exact order. In an asynchronous environment, a large series of executions will result in callback after callback.
+There are instances where multiple executions need to be in an exact order.  
+In an asynchronous environment, a large series of executions will result in callback after callback.
 
 <!-- ![callback_hell](https://miro.medium.com/max/1400/1*sOy11ZsU1ijCSjZwx8ZzGQ.jpeg){: width="70%"} -->
 <img src="https://miro.medium.com/max/1400/1*sOy11ZsU1ijCSjZwx8ZzGQ.jpeg" alt="callback_hell" width="70%"/>
