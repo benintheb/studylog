@@ -9,12 +9,38 @@
 ### Synchronous and Asynchronous
 
 Synchronous means to do one task at a time. The next task can start only after the previous task is finished.  
-Asynchronous means to do multiple tasks at once. Without waiting for the neighboring tasks to finish, it starts any task that it is given. 
+Asynchronous means to do multiple tasks at once. Without waiting for the neighboring tasks to finish, it starts all the tasks that it is given. 
 
-![sync_n_async](https://media.vlpt.us/images/cyongchoi/post/865ca482-fe2c-4444-9702-1d9701edf0c8/lpf0u9nbj7w41.jpg)
+![sync_n_async](https://media.vlpt.us/images/cyongchoi/post/865ca482-fe2c-4444-9702-1d9701edf0c8/lpf0u9nbj7w41.jpg = 800x)
 
+- JavaScript naturally has a asynchronous behavior, that it does not wait for a code in calculation before moving on to the next code.
 
+### Callback Function
 
+There are instances where an order of execution needs to be guaranteed. The callback function is used in these instances.
+
+    function a(){
+        console.log("latter");
+    }
+
+    function b(callback){
+        console.log("former");
+        callback();
+    }
+
+    b(a);
+
+Function `b` receives function `a` as a factor and keeps it. Function `a` is executed only after function `b` does what it has to do.
+
+### Callback Hell
+
+There are instances where multiple executions need to be in an exact order. In an asynchronous environment, a series of executions will have to callback after callback.
+
+![callback_hell](https://miro.medium.com/max/1400/1*sOy11ZsU1ijCSjZwx8ZzGQ.jpeg = 800x)
+
+This type of coding is called a callback hell. Callback hells are harder to read and are difficult to change logicwise.
+
+- The solving of a callback hell was implemented in ES6, in `promise`, `async`, and `await`. They will be looked at another time.
 
 ---
 
