@@ -4,6 +4,20 @@
 
 ---
 
+## Callback Function (200724)
+
+### Synchronous and Asynchronous
+
+Synchronous means to do one task at a time. The next task can start only after the previous task is finished.  
+Asynchronous means to do multiple tasks at once. Without waiting for the neighboring tasks to finish, it starts any task that it is given. 
+
+![sync_n_async](https://media.vlpt.us/images/cyongchoi/post/865ca482-fe2c-4444-9702-1d9701edf0c8/lpf0u9nbj7w41.jpg)
+
+
+
+
+---
+
 ## `this` Keyword (200723)
 
 ### Binding
