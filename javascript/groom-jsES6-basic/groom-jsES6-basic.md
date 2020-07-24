@@ -117,7 +117,7 @@ Both objects are calling `this.name`, but each method is binded with a different
 Method `func`'s `this.value` is binded with `value` of `obj` which is 1, but the inner method `innerFunc`'s `this.value` is binded with `value` of the window object which is 100.  
 
 - This phenomena shows one of the flaws of the JavaScript language.  
-- There are methods such as `apply`, `call`, and `bind` to address this flaw, but will be looked at in another time.
+- There are methods such as `apply`, `call`, and `bind` to address this flaw, but will be looked at another time.
 
 ---
 
