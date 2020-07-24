@@ -11,7 +11,8 @@
 Synchronous means to do one task at a time. The next task can start only after the previous task is finished.  
 Asynchronous means to do multiple tasks at once. Without waiting for the neighboring tasks to finish, it starts all the tasks that it is given. 
 
-![sync_n_async](https://media.vlpt.us/images/cyongchoi/post/865ca482-fe2c-4444-9702-1d9701edf0c8/lpf0u9nbj7w41.jpg){: width="70%" height="100%"}
+<!-- ![sync_n_async](https://media.vlpt.us/images/cyongchoi/post/865ca482-fe2c-4444-9702-1d9701edf0c8/lpf0u9nbj7w41.jpg){: width="70%" height="100%"} -->
+<img src="https://media.vlpt.us/images/cyongchoi/post/865ca482-fe2c-4444-9702-1d9701edf0c8/lpf0u9nbj7w41.jpg" alt="sync_n_async" width="70%"/>
 
 - JavaScript naturally has a asynchronous behavior, that it does not wait for a code in calculation before moving on to the next code.
 
