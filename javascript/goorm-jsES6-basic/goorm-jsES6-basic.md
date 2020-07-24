@@ -36,7 +36,8 @@ Function `b` receives function `a` as a factor and keeps it. Function `a` is exe
 
 There are instances where multiple executions need to be in an exact order. In an asynchronous environment, a series of executions will have to callback after callback.
 
-![callback_hell](https://miro.medium.com/max/1400/1*sOy11ZsU1ijCSjZwx8ZzGQ.jpeg =800x)
+<!-- ![callback_hell](https://miro.medium.com/max/1400/1*sOy11ZsU1ijCSjZwx8ZzGQ.jpeg =800x) -->
+<img src="https://miro.medium.com/max/1400/1*sOy11ZsU1ijCSjZwx8ZzGQ.jpeg" alt="callback_hell" height="800">
 
 This type of coding is called a callback hell. Callback hells are harder to read and are difficult to change logicwise.
 
