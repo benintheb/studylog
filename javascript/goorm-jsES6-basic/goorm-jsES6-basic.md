@@ -31,11 +31,14 @@ There are instances where an order of execution needs to be guaranteed. The call
 
     b(a);
 
+    // former
+    // latter
+
 Function `b` receives function `a` as a factor and keeps it. Function `a` is executed only after function `b` does what it has to do.
 
 ### Callback Hell
 
-There are instances where multiple executions need to be in an exact order. In an asynchronous environment, a series of executions will have to callback after callback.
+There are instances where multiple executions need to be in an exact order. In an asynchronous environment, a large series of executions will result in callback after callback.
 
 <!-- ![callback_hell](https://miro.medium.com/max/1400/1*sOy11ZsU1ijCSjZwx8ZzGQ.jpeg){: width="70%"} -->
 <img src="https://miro.medium.com/max/1400/1*sOy11ZsU1ijCSjZwx8ZzGQ.jpeg" alt="callback_hell" width="70%"/>
