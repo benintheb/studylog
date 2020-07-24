@@ -132,7 +132,7 @@ A variable declared in a local scope is a local variable. (of course)
 
 Local scopes are again devided into two scopes, block scopes and function scopes.
 
-##### Block Scopes (implemented in ES6)
+#### Block Scopes (implemented in ES6)
 
 What is a block? 
 
@@ -142,7 +142,7 @@ What is a block?
 
 Block scopes are activated only using `let` and `const`. When using `var`, the variable is considered as a global scope.
 
-##### Function Scopes
+#### Function Scopes
 
 Function scopes can only be used inside functions, as the name suggests.
 
