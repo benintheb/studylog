@@ -4,7 +4,7 @@
 
 ---
 
-## URL (200728)
+## URL
 
 <img src="https://code-boxx.com/wp-content/uploads/2018/06/js-url-parts-r2.jpg" alt="url-parts" width="70%">
 
@@ -28,7 +28,7 @@ Query strings start with `?`, and uses `&` between values. A value and its name 
 
 ## fs Module
 
-### fs.readFile(file[, options], callback) (200729)
+### fs.readFile(file[, options], callback)
 
 `readFile` is an asyncronous way to read a file. `file` is read in `options` format and sent to `callback`.
 
