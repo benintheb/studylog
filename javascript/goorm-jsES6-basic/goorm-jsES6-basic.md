@@ -4,6 +4,64 @@
 
 ---
 
+## `let` and `const`
+
+### The Problem With `var`
+
+- The usage of `var` inside a block is considered a global variable. One cannot use `var` for a block scope variable.  
+The increase of global variables is never considered positive.
+
+- `var` allows reusing of names. This causes the unintentional change of the values of variables.  
+In this context, the distiction of variables containing flexible/non-flexible values cannot be made.
+
+    var value = "value meant not to be changed";
+
+    if(true){
+        var value = "unintentional change";
+    }
+
+    console.log(value);   // value is changed.
+
+### `let`
+
+First, the name of the variable cannot overlap with `let`. Also, `let` is considered to be in a block scope when used inside a block.
+
+    if(true){
+        let num = 3;
+        console.log(num);
+        //let num = 7;  // SyntaxError: Identifier 'num' has already been declared
+        num = 7;
+        console.log(num);   // 7 (other values can be stored)
+    }
+    //console.log(num); // ReferenceError: num is not defined
+
+Inside the block, another variable `num` cannot be declared with `let`. However, the value can still be changed.
+
+### `const`
+
+`const` is all the same with `let` exept for one thing. The value of the variable declared with `const` **cannot** change.
+
+    if(true){
+        const num = 3;
+        console.log(num);
+        num = 7;    // TypeError: Assignment to constant variable
+    }
+
+`const` is commonly used to declare objects, for the structure of the object cannot be changed, but *the values of each keys **are** mutable*.
+
+    const obj = {
+        'key': 'value'
+    }
+    console.log(obj.key);   // value
+
+    obj.key = 'value1';
+    console.log(obj.key);   // value1
+
+- Rather than the usage of `var`, `let` and `const` should be used if possible.
+
+- If it is a value that is going to be reallocated, use `let`.  
+If a value does not have to change, use `const` by default.
+
 ## Callback Function (200724)
 
 ### Synchronous and Asynchronous
