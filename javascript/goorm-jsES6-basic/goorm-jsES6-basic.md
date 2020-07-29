@@ -12,9 +12,7 @@
 The increase of global variables is never considered positive.
 
 - `var` allows reusing of names. This causes the unintentional change of the values of variables.  
-In this context, the distiction of variables containing flexible/non-flexible values cannot be made.
-
-<br>
+In this context, the distiction of variables containing flexible/non-flexible values cannot be made.<br>
 
     var value = "value meant not to be changed";
 
