@@ -12,7 +12,7 @@
 The increase of global variables is never considered positive.
 
 - `var` allows reusing of names. This causes the unintentional change of the values of variables.  
-In this context, the distiction of variables containing flexible/non-flexible values cannot be made.
+In this context, the distiction of variables containing flexible/non-flexible values cannot be made.  
 
     var value = "value meant not to be changed";
 
@@ -24,7 +24,7 @@ In this context, the distiction of variables containing flexible/non-flexible va
 
 ### `let`
 
-First, the name of the variable cannot overlap with `let`. Also, `let` is considered to be in a block scope when used inside a block.
+With `let`, the names of the variables cannot overlap. Also, `let` is considered to be in a block scope when used inside a block.
 
     if(true){
         let num = 3;
@@ -46,6 +46,8 @@ Inside the block, another variable `num` cannot be declared with `let`. However,
         console.log(num);
         num = 7;    // TypeError: Assignment to constant variable
     }
+
+<br>
 
 `const` is commonly used to declare objects, for the structure of the object cannot be changed, but *the values of each keys **are** mutable*.
 
