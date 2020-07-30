@@ -4,6 +4,37 @@
 
 ---
 
+## Template Literal
+
+The existing string expressions have a certain inconvenience when it comes to coding. 
+
+    const name = "Ben";
+    console.log("Hi my name is " + name + ". Nice to meet you.");
+
+To fit a variable inside a string, `+` signs have to be used. When needing to fit multiple variables, this can be very inconvenient.
+
+Template literal is expressing string using backticks ``\``. This allows multiple lines be recognized, and there's no need for `+` to come in between.  
+Also, conditional statements can be used.
+
+```
+console.log(`I'm tired of writing
+these posts.`);
+// I'm tired of writing
+   these posts.
+
+const name = "Ben";
+console.log(`Hello my name is ${name}. Nice to meet you`);
+// Hello my name is Ben. nice to meet you.
+
+let hw = true;
+console.log(`Oh my homework ${hw ? "is finished" : "is not done yet"}`);
+// Oh my homework is finished
+```
+
+Variables can be accessed inside template literals with `${variable}`.
+
+---
+
 ## `let` and `const`
 
 ### The Problem With `var`
