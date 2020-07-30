@@ -4,6 +4,43 @@
 
 ---
 
+## Arrow Function
+
+Arrow function expressions are a lot less shorter than original function expressions. Arrow functions do not have its own bindings with `this`, `arguments`, `super`, or `new.target`.  
+An arrow function is always anonymous and cannot be used as a constructor method.
+
+    hello = () => {
+        return "Hello World!";
+    }
+
+The blank parentheses in this example is where the parameters go in.
+
+- If there is only one parameter, the parentheses can be excluded.
+- If the code inside braces(curly brackets) can be expressed in one line, the braces can be excluded.
+- If the braces are excluded, `return` is implicit.
+```
+    const square = num1 => num1 * num1;
+    console.log(square(10));
+    // 100
+```
+
+Codes can be very succinct with arrow functions.
+
+    // if a number is larger than 0, print the number.
+    // if a number is smaller than 0, print 0.
+
+    const exam = num => num >= 0 ? num : 0;
+
+Arrow functions massively increase the readability of callback functions.
+
+    setTimeout( () => console.log("Hello!"), 3000);
+
+
+
+
+
+---
+
 ## Template Literal
 
 The existing string expressions have a certain inconvenience when it comes to coding. 
@@ -94,6 +131,8 @@ Inside the block, another variable `num` cannot be declared with `let`. However,
 
 - If it is a value that is going to be reallocated, use `let`.  
 If a value does not have to change, use `const` by default.
+
+---
 
 ## Callback Function (200724)
 
