@@ -13,8 +13,7 @@ The existing string expressions have a certain inconvenience when it comes to co
 
 To fit a variable inside a string, `+` signs have to be used. When needing to fit multiple variables, this can be very inconvenient.
 
-Template literal is expressing string using backticks ``\``. This allows multiple lines be recognized, and there's no need for `+` to come in between.  
-Also, conditional statements can be used.
+Template literal is expressing string using backticks `` ` ``. This allows multiple lines be recognized, and there's no need for `+` to come in between. Also, conditional statements can be used.
 
 ```
 console.log(`I'm tired of writing
@@ -44,9 +43,7 @@ The increase of global variables is never considered positive.
 
 - `var` allows reusing of names. This causes the unintentional change of the values of variables.  
 In this context, the distiction of variables containing flexible/non-flexible values cannot be made.
-
-<br>
-
+```
     var value = "value meant not to be changed";
 
     if(true){
@@ -54,6 +51,7 @@ In this context, the distiction of variables containing flexible/non-flexible va
     }
 
     console.log(value);   // value is changed.
+```
 
 ### `let`
 
