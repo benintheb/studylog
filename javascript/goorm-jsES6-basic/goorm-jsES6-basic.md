@@ -4,6 +4,99 @@
 
 ---
 
+## Interacting With Arrays
+
+### Direct Addition: `.push`
+
+`.push` is adding an element to arrays. The element is added to the end of the array. This directly adds the element to the array.
+
+    const arr = [1, 2, 3, 4];
+    arr.push(5);
+    console.log(arr);
+    // [1, 2, 3, 4, 5]
+
+### Indirect Addition: `.concat`
+
+When using frameworks in JavaScript, the matter of direct or indirect interaction with the array is important.  
+`.concat` indirectly adds to the array by having to create another variable to contain the result.
+
+    const arr = [1, 2, 3, 4];
+    const arrAdd = arr.concat(5);
+    console.log(arrAdd);
+    // [1, 2, 3, 4, 5]
+
+### Direct Subtraction: `.pop`
+
+`pop` does the exact opposite of `push`. It deletes the last element in the array.
+
+    const arr = [1, 2, 3, 4, 5];
+    arr.pop(5);
+    console.log(arr);
+    // [1, 2, 3, 4]
+
+### Looping in Arrays: `.forEach`, `.map`
+
+For looping in arrays, using `for` would have been the original way.
+
+    const names = ['ben', 'harry', 'mark'];
+
+    for(var i = 0; i < names.length; i++){
+        console.log(`My name is ${names[i]}.`);
+    }
+    // My name is ben.
+    // My name is harry.
+    // My name is mark.
+
+This can be done in a more simple fashion, using the `.forEach`.
+
+    const names = ['ben', 'harry', 'mark'];
+
+    arr.forEach(name => console.log(`My name is ${name}.`));
+    // My name is ben.
+    // My name is harry.
+    // My name is mark.
+
+There is another simple way to loop arrays. That is the `.map`. `.map` is used frequently when using frameworks. The difference with `.forEach` is that `.map` stores the result of the function in a new array.
+
+    const num = [1, 2, 3, 4];
+ 
+    const newNum = num.map( n => n*2 );
+    console.log(newNum);
+    // [2, 4, 6, 8]
+
+By creating a new variable and storing the result of the function, `.map` is open to a lot of useful tasks.
+
+---
+
+## JavaScript Arrays
+
+Arrays in JavaScript are not acually arrays, but rather **objects** that pretend to be arrays.
+
+    const arr = [1, 2, 3, 4];
+    console.log(typeof arr);
+    // object
+
+### Length of Arrays: `.length`
+
+The length of an array can be known with the method `.length`. Obviously, right?
+
+    const arr = [1, 2, 3, 4];
+    console.log(arr.length);
+    // 4
+
+In JavaScript however, the length of the array does not necessarily mean that there are that many elements.
+
+    const arr = [];
+    arr[2] = 3;
+    console.log(arr.length);
+    // 3
+
+Even if there was only one element added to the array, the `.length` method counts the total length of the array.
+
+- The length of the array and the number of elements in the array is different in JavaScript. 
+
+___
+
 ## Arrow Function
 
 Arrow function expressions are a lot less shorter than original function expressions. Arrow functions do not have its own bindings with `this`, `arguments`, `super`, or `new.target`.  
