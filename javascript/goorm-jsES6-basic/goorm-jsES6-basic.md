@@ -66,6 +66,27 @@ There is another simple way to loop arrays. That is the `.map`. `.map` is used f
 
 By creating a new variable and storing the result of the function, `.map` is open to a lot of useful tasks.
 
+### Searching in Arrays: `.filter`
+
+With `.filter`, a set of results can be searched and stored in another varible. 
+
+    const num = [1, 3, 5, 7, 9];
+
+    const fiveUp = num.filter(num => num >= 5);
+    console.log(fiveUp);
+    // [5, 7, 9]
+
+`.filter` can be used to find complex keys and values in objects.
+
+    const dateId = 
+    [
+        {"id":1, "date": "yesterday"},{"id":2, "date": "yesterday"}, {"id":3, "date": "today"}
+    ];
+
+    const yesterday = dateId.filter(post => post.date === "yesterday");
+    console.log(yesterday);
+    // [{id: 1, date: "yesterday"}, {id: 2, date: "yesterday"}]
+
 ---
 
 ## JavaScript Arrays
