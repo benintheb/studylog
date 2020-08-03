@@ -80,7 +80,7 @@ With `.filter`, a set of results can be searched and stored in another varible.
 
     const dateId = 
     [
-        {"id":1, "date": "yesterday"},{"id":2, "date": "yesterday"}, {"id":3, "date": "today"}
+        {"id":1, "date": "yesterday"}, {"id":2, "date": "yesterday"}, {"id":3, "date": "today"}
     ];
 
     const yesterday = dateId.filter(post => post.date === "yesterday");
