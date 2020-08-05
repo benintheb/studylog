@@ -34,3 +34,36 @@ Indentations are two spaces with the space bar.
 
 ### Curly Brackets
 
+1. Open the curly brackets and change the line.
+1. Change the line and close the curly brackets.
+```
+function sayHello(name)
+{
+    console.log(`Hello, my name is ${name}.`);
+}
+```
+1. (Except for `if`-`else`, `try`-`catch`-`finally`)Open and close in one line with `{}` only when empty.
+```
+const foo = () => {};
+```
+
+- This type of indentation style is called the The K&R style (Kernighan & Ritchie Style).
+
+### Arrays
+
+1. When allocated multiple values from one array, use deconstructing.
+1. Use the spread operator(`...`) when copying an array.
+1. Use `push` when adding to an array.
+
+### Objects
+
+1. Use double quotation marks when addressing the key.
+
+### Operators
+
+1. Use the identity operator/nonidentity operator(`===`, `!==`) instead of the equality operator/inequality operator(`==`, `!=`).
+
+
+    
+
+
