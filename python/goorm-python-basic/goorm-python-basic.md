@@ -62,4 +62,12 @@ The number inside the method puts the values inside the length of the amount, an
        009
        010
 
-### 
+---
+
+## Standard Input
+
+When getting values through the `input` method, the value is always in a `string` format. 
+
+    val = input("input a value: ")
+    print(type(val))
+    # <class 'str'>
