@@ -38,4 +38,28 @@ As the meaning can be derived from the name, `ljust` means to adjust to the left
 
     scores = {"math": 0, "english": 50, "science": 100}
     for subject, score in scores.items():
-        print(subject.ljust(4), str(score).rjust(12), sep=":")
+        print(subject.ljust(8), str(score).rjust(4), sep=":")
+    // math    :   0
+       english :  50
+       science : 100
+
+The number inside the method puts the values inside the length of the amount, and then adjusts it. 
+
+### `zfill`
+
+`zfill` secures the number of spaces given, and fills the empty spaces with 0.
+
+    for num in range(1, 11):
+        print(str(num).zfill(3))
+    // 001
+       002
+       003
+       004
+       005
+       006
+       007
+       008
+       009
+       010
+
+### 
