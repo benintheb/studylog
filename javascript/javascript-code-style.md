@@ -42,7 +42,7 @@ function sayHello(name)
     console.log(`Hello, my name is ${name}.`);
 }
 ```
-1. (Except for `if`-`else`, `try`-`catch`-`finally`)Open and close in one line with `{}` only when empty.
+1. Open and close in one line with `{}` only when empty. (Except for `if`-`else`, `try`-`catch`-`finally`)
 ```
 const foo = () => {};
 ```
@@ -57,11 +57,11 @@ const foo = () => {};
 
 ### Objects
 
-1. Use double quotation marks when addressing the key.
+Use double quotation marks when addressing the key.
 
 ### Operators
 
-1. Use the identity operator/nonidentity operator(`===`, `!==`) instead of the equality operator/inequality operator(`==`, `!=`).
+Use the identity operator/nonidentity operator(`===`, `!==`) instead of the equality operator/inequality operator(`==`, `!=`).
 
 
     
