@@ -9,17 +9,17 @@
 When using the print function, the distance between elements can be adjusted using `,` and `+`.
 
     print("Python", "Java")
-    // Python Java
+    # Python Java
 
     print("Python" + "Java")
-    // PythonJava
+    # PythonJava
 
 ### `sep` parameter
 
 Adding a `sep` parameter allows one to choose what comes in between elements. It *separates* the elements with the value of the parameter written.
 
     print("Python", "Java", sep=", ")
-    // Python, Java
+    # Python, Java
 
 ### `end` parameter
 
@@ -27,7 +27,7 @@ The `end` parameter chooses when to end the print function. The line ends when i
 
     print("Python is fun.", end="?")
     print(" Don't you agree?")
-    // Python is fun. Don't you agree?
+    # Python is fun. Don't you agree?
 
 ### `sys.stdout`, `sys.stderr`
 
@@ -39,7 +39,7 @@ As the meaning can be derived from the name, `ljust` means to adjust to the left
     scores = {"math": 0, "english": 50, "science": 100}
     for subject, score in scores.items():
         print(subject.ljust(8), str(score).rjust(4), sep=":")
-    // math    :   0
+    # math    :   0
        english :  50
        science : 100
 
@@ -51,7 +51,7 @@ The number inside the method puts the values inside the length of the amount, an
 
     for num in range(1, 11):
         print(str(num).zfill(3))
-    // 001
+    #  001
        002
        003
        004
