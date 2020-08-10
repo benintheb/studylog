@@ -4,6 +4,8 @@
 
 ---
 
+## Spread
+
 ## Interacting With Arrays
 
 ### Direct Addition: `.push`
