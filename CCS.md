@@ -33,5 +33,5 @@ SaaS enables a user to be free of installing or running a software on any comput
 
 ---
 
-summarized from [this site](https://www.bigcommerce.com/blog/saas-vs-paas-vs-iaas/#the-three-types-of-cloud-computing-service-models-explained).
+summarized from [this page](https://www.bigcommerce.com/blog/saas-vs-paas-vs-iaas/#the-three-types-of-cloud-computing-service-models-explained).
 
