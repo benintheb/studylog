@@ -25,11 +25,13 @@ SaaS enables a user to be free of installing or running a software on any comput
 
 ---
 
+## Recap
+
 - IaaS is there to provide you with maximum flexibility when it comes to hosting custom-built apps, as well as a providing a general data center for data storage.
 - PaaS is most often built on top of an IaaS platform to reduce the need for system administration. It allows you to focus on app development instead of infrastructure management.
 - SaaS offers ready-to-use, out-of-the-box solutions that meet a particular business need (such as website or email). Most modern SaaS platforms are built on IaaS or PaaS platforms.
 
 ---
 
-summarized from [this site](https://www.bigcommerce.com/blog/saas-vs-paas-vs-iaas/#the-three-types-of-cloud-computing-service-models-explained)
+summarized from [this site](https://www.bigcommerce.com/blog/saas-vs-paas-vs-iaas/#the-three-types-of-cloud-computing-service-models-explained).
 
