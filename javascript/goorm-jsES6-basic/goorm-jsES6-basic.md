@@ -4,7 +4,66 @@
 
 ---
 
-## Spread
+## `...` (Spread Operator and Rest Parameter)
+
+### Spread Operator
+
+The spread operator is used to expand elements. One can add new elements on top of the existing elements retrieved by the spread operator.
+
+    const student = {
+        name : "ben",
+        number : 20
+    };
+
+    const uStudent = {
+        ...student,
+        univ : "soongsil"
+    };
+    console.log(uStudent);
+    // {name: "ben", number: 20, univ: "soongsil"}
+
+The same can be done in arrays.
+
+    const evenNum = [2, 4, 6, 8, 10];
+    const oddNum = [1, 3, 5, 7, 9];
+
+    const allNum = [...evenNum, ...oddNum];
+    console.log(allNum);
+
+The spread operator is best used when retriving elements to be put in as a factor of a function.
+
+    const evenNum = [2, 4, 6, 8, 10];
+    const oddNum = [1, 3, 5, 7, 9];
+
+    const allNum = [...evenNum, ...oddNum];
+
+    sum = (num1, num2, num3, num4, num5, num6, num7, num8, num9, num10) => {
+        return num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10
+    };
+
+    const result = sum(...allNum);
+    console.log(result);
+    // 55
+
+### Rest Parameter
+
+The rest parameter is used to collect all remaining elements into an array. Alike the spread operator, the rest parameter retrieves the elements, but displays them in an array format. It is best used to be factors in a function, or to make new arrays or objects containing the remaining elements.
+
+    const evenNum = [2, 4, 6, 8, 10];
+    const oddNum = [1, 3, 5, 7, 9];
+
+    sum = (...nums) => {
+        let result = 0;
+        for (let num of nums) result += num;
+        return result
+    };
+    const allNum = sum(...evenNum, ...oddNum);
+    console.log(allNum);
+    // 55
+
+- It is important to distinguish between the two usage of `...` and know when and where to use them.
+
+---
 
 ## Interacting With Arrays
 
