@@ -1,6 +1,6 @@
 # Three Types of Cloud Computing Service Models (IaaS, SaaS, PaaS)
 
-<img src="https://www.bigcommerce.com/blog/wp-content/uploads/2018/10/saas-vs-paas-vs-iaas-breakdown.jpg" alt="saas-vs-paas-vs-iaas-breakdown" width="70%"/>
+<img src="https://www.bigcommerce.com/blog/wp-content/uploads/2018/10/saas-vs-paas-vs-iaas-breakdown.jpg" alt="saas-vs-paas-vs-iaas-breakdown" width="70%" text-align="center"/>
 
 ## IaaS (Infrastructure as a Service)
 
