@@ -29,6 +29,7 @@ The same can be done in arrays.
 
     const allNum = [...evenNum, ...oddNum];
     console.log(allNum);
+    // [2, 4, 6, 8, 10, 1, 3, 5, 7, 9]
 
 The spread operator is best used when retriving elements to be put in as a factor of a function.
 
@@ -48,7 +49,7 @@ The spread operator is best used when retriving elements to be put in as a facto
 ### Rest Parameter
 
 The rest parameter is used to collect all remaining elements into an array. Alike the spread operator, the rest parameter retrieves the elements, but displays them in an array format. It is best used to be factors in a function, or to make new arrays or objects containing the remaining elements.
-
+```
     const evenNum = [2, 4, 6, 8, 10];
     const oddNum = [1, 3, 5, 7, 9];
 
@@ -60,6 +61,17 @@ The rest parameter is used to collect all remaining elements into an array. Alik
     const allNum = sum(...evenNum, ...oddNum);
     console.log(allNum);
     // 55
+```
+```
+    const univ = {
+        "one" : "soongsil",
+        "two" : "seoul", 
+        "three" : "chungang"
+        };
+    const {one, ...nonSoongsil} = univ;
+    console.log(nonSoongsil);
+    // {two: "seoul", three: "chungang"}
+```
 
 - It is important to distinguish between the two usage of `...` and know when and where to use them.
 
