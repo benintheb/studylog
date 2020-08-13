@@ -6,11 +6,15 @@
 
 ## `promise`, `asnyc`, and `await`
 
+---
+
 ## Exception Handling (`try`, `catch`, `finally`)
+
+---
 
 ## JavaScript Module (Export and Import)
 
-## Prototype
+---
 
 ## Class
 
@@ -42,6 +46,10 @@ JavaScript does not have classes, for it is a language founded on a prototype.
 ### Child Class and `super()`
 
 
+
+---
+
+## Prototype
 
 ---
 
