@@ -73,7 +73,7 @@ The rest parameter is used to collect all remaining elements into an array. Alik
     // {two: "seoul", three: "chungang"}
 ```
 
-- It is important to distinguish between the two usage of `...` and know when and where to use them.
+- It is important to distinguish between the two usages of `...` and know when and where to use them.
 
 ---
 
