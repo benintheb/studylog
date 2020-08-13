@@ -4,6 +4,47 @@
 
 ---
 
+## `promise`, `asnyc`, and `await`
+
+## Exception Handling (`try`, `catch`, `finally`)
+
+## JavaScript Module (Export and Import)
+
+## Prototype
+
+## Class
+
+JavaScript does not have classes, for it is a language founded on a prototype.
+
+    class Person {
+        constructor(name){
+            this.name = name;
+        }
+
+        sayHello(){
+            console.log(`Hello. My name is ${this.name}`);
+        }
+    }
+
+    let ben = new Person("Ben");
+    ben.sayHello(); 
+
+
+
+    class Student extends Person { 
+        constructor(name, school, major){
+            super(name);
+            this.school = school;
+            this.major = major;
+        }
+    }
+
+### Child Class and `super()`
+
+
+
+---
+
 ## `...` (Spread Operator and Rest Parameter)
 
 ### Spread Operator
@@ -124,7 +165,7 @@ This can be done in a more simple fashion, using the `.forEach`.
 
     const names = ['ben', 'harry', 'mark'];
 
-    arr.forEach(name => console.log(`My name is ${name}.`));
+    names.forEach(name => console.log(`My name is ${name}.`));
     // My name is ben.
     // My name is harry.
     // My name is mark.
