@@ -14,7 +14,8 @@ I forgot what `promise` does.
 
 ## Exception Handling (`try`, `catch`, `finally`)
 
-For safekeeping a program that it does not break down when errors occur, the `try`, `catch`, and `finally` methods are used. The codes in the `try` section are run first, and if there is an error, the `catch` code comes into play. Whether or not there is an error, `finally` is always run.
+For safekeeping a program that it does not break down when errors occur, the `try`, `catch`, and `finally` methods are used. The codes in the `try` section are run first, and if there is an error, the `catch` code comes into play.  
+Whether or not there is an error, `finally` is always run.
 
 ```
 
@@ -52,6 +53,8 @@ JavaScript does not have classes, for it is a language founded on a prototype.
 ### Child Class and `super()`
 
 Child classes are made to inherit the various variables and methods that a parent class has. 
+
+A child class is simply made by adding `extends ParentClass` after the child class's name.
 
 When having to rewrite a variable, `super()` is used. `super()` resets the value of the variable in the parent class to the given value in the child class.
 
