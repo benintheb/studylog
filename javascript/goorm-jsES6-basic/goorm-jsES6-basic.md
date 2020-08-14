@@ -6,13 +6,29 @@
 
 ## `promise`, `asnyc`, and `await`
 
+`promise`, `asnyc`, and `await` is handy when dodging callback hells or wanting to run the code in a synchronous manner.  
+
+I forgot what `promise` does.
+
 ---
 
 ## Exception Handling (`try`, `catch`, `finally`)
 
+For safekeeping a program that it does not break down when errors occur, the `try`, `catch`, and `finally` methods are used. The codes in the `try` section are run first, and if there is an error, the `catch` code comes into play. Whether or not there is an error, `finally` is always run.
+
+```
+
+```
+
 ---
 
 ## JavaScript Module (Export and Import)
+
+When programming, code is devided into various files for better management and updates. To exchange code between files, having to use the export and import modules is inevitable.
+
+```
+
+```
 
 ---
 
@@ -33,7 +49,11 @@ JavaScript does not have classes, for it is a language founded on a prototype.
     let ben = new Person("Ben");
     ben.sayHello(); 
 
+### Child Class and `super()`
 
+Child classes are made to inherit the various variables and methods that a parent class has. 
+
+When having to rewrite a variable, `super()` is used. `super()` resets the value of the variable in the parent class to the given value in the child class.
 
     class Student extends Person { 
         constructor(name, school, major){
@@ -42,10 +62,6 @@ JavaScript does not have classes, for it is a language founded on a prototype.
             this.major = major;
         }
     }
-
-### Child Class and `super()`
-
-
 
 ---
 
