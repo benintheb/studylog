@@ -1,4 +1,4 @@
-# Three Types of Cloud Computing Service Models (IaaS, SaaS, PaaS)
+# Types of Cloud Computing Service Models
 
 <img src="https://www.bigcommerce.com/blog/wp-content/uploads/2018/10/saas-vs-paas-vs-iaas-breakdown.jpg" alt="saas-vs-paas-vs-iaas-breakdown" width="70%"/>
 
@@ -35,3 +35,12 @@ SaaS enables a user to be free of installing or running a software on any comput
 
 summarized from [this page](https://www.bigcommerce.com/blog/saas-vs-paas-vs-iaas/#the-three-types-of-cloud-computing-service-models-explained).
 
+## DaaS (Data as a Service)
+
+Data as a service looks to make data sets accurate, easy to digest and actionable for the user. The user can have access to high quality and useful data whenever they want through the cloud. 
+
+## SECaaS (Security as a Service)
+
+SECaaS is to provide a securiy service that is fit for a user via the cloud. It provides services such as linking its cloud security sysyem to a company's already existing infrastructure.
+
+SECaaS does not require on-premise hardware, therefore has a efficient cost as an advantage.
