@@ -23,8 +23,6 @@ SaaS is software that’s available via a third-party over the internet. BigComm
 
 SaaS enables a user to be free of installing or running a software on any computer. With an internet connection, everything is available online and can be accessed from any device, anywhere. Downloading the software onto multiple computers and keeping everything up-to-date is no longer an issue with SaaS. Everything is taken care of on the cloud, and maintenance, compliance, and security services are all taken care of. There is a variety of solutions for businesses, for SaaS is scalable, with different tiers for small, medium, and enterprise-level businesses.
 
----
-
 ## Recap
 
 - IaaS is there to provide you with maximum flexibility when it comes to hosting custom-built apps, as well as a providing a general data center for data storage.
