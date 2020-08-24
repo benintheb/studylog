@@ -4,6 +4,10 @@
 
 ---
 
+## 
+
+---
+
 ## URL
 
 <img src="https://code-boxx.com/wp-content/uploads/2018/06/js-url-parts-r2.jpg" alt="url-parts" width="70%">
@@ -46,3 +50,8 @@ Query strings start with `?`, and uses `&` between values. A value and its name 
 
 - For both `readFile` and `readFileSync`, should the function return a string, the `encoding` option is specified on the `options` part.
 
+### fs.readdir(path[, options], callback)
+
+`readdir` is a way to read the contents of a directory. The method requires a path to the directory, and executes a callback function. The callback gets two arguments, `(err, files)` where files is an array of the file names in the inquired directory.
+
+There is a synchronous way of `readdir`, which is `fs.readdirSync(path[, options])`
